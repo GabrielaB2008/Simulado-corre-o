@@ -20,6 +20,6 @@ class Movimentacao extends Model
     }
 
      public function user():BelongsTo{
-        return $this->belongsTo(Produto::class);
+        return $this->belongsTo(User::class);
     }
 }

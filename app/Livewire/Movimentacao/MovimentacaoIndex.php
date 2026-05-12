@@ -20,6 +20,7 @@ class MovimentacaoIndex extends Component
 
     public function render()
     {
+        $movimentacaos = Movimentacao::orderBy('data_movimentacao', 'desc')->get();
         $movimentacaos = Movimentacao::where('produto_id', 'like', '%'.$this->search.'%')->get();
         return view('livewire.movimentacao.movimentacao-index', compact('movimentacaos'));
     }

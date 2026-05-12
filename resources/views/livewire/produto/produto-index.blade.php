@@ -15,7 +15,7 @@
     <input type="text" wire:model.live='search' placeholder="Pesquisar..." class="form-control">
   </div>
 
-    <table class="table table-">
+    <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">ID</th>
